@@ -9,10 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Init Node
-      run: nvm install latest
     - name: Init Firebase
-      run: yarn add firebase-tools
+      run: npm install -g firebase-tools
     - name: Build
       run: yarn build
     - name: Deploy
