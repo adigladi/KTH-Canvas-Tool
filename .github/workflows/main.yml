@@ -1,18 +1,15 @@
 name: Firebase Deployment
-
 on: [push]
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
-    - name: Init Firebase
-      run: npm install firebase-tools
     - name: Build
-      run: npm run build
+      run: yarn build
+    - name: Init Firebase
+      run: yarn add firebase-tools
     - name: Deploy
       run: firebase deploy --token "1//0ckFc6ZvkUDg3CgYIARAAGAwSNwF-L9Ir5SlSlE-yrJaf1PVJKvUGE2_uxY0gpoUbS1t26kZGB4dfyRMucIHrSFYwz2evWjUzGvw" --project "kth-canvas-tool"
         
