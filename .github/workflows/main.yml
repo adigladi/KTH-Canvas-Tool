@@ -9,8 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Deploy
+    - name: Init
       run: |
+        yarn
         yarn add firebase-tools
         yarn build
         firebase deploy --token "1//0ckFc6ZvkUDg3CgYIARAAGAwSNwF-L9Ir5SlSlE-yrJaf1PVJKvUGE2_uxY0gpoUbS1t26kZGB4dfyRMucIHrSFYwz2evWjUzGvw" --project "kth-canvas-tool"
