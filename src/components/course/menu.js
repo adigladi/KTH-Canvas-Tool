@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class CourseMenu extends Component {
   render() {
@@ -11,115 +12,74 @@ export default class CourseMenu extends Component {
         <nav role="navigation" aria-label="Courses Navigation Menu">
           <ul id="section-tabs">
             <li className="section">
-              <a
-                href="/courses/3080"
-                title="Home"
-                aria-current="page"
-                className="home active"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0" className="active">
                 Home
-              </a>
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/announcements"
-                title="Announcements"
-                className="announcements"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 Announcements
-              </a>
+              </Link>
             </li>
             <li className="section">
-              <a
-                href="/courses/3080/assignments"
-                title="Assignments"
-                className="assignments"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 Assignments
-              </a>
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/discussion_topics"
-                title="Discussions"
-                className="discussions"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 Discussions
-              </a>
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/grades"
-                title="Grades"
-                className="grades"
-                tabIndex="0"
-              >
-                Grades<b className="nav-badge">1</b>
-              </a>
+              <Link to="/" tabIndex="0">
+                Grades
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/users"
-                title="People"
-                className="people"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 People
-              </a>
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/assignments/syllabus"
-                title="Syllabus"
-                className="syllabus"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 Syllabus
-              </a>
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/modules"
-                title="Modules"
-                className="modules"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 Modules
-              </a>
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/collaborations"
-                title="Collaborations"
-                className="collaborations"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 Collaborations
-              </a>
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/external_tools/788"
-                title="Media Gallery"
-                className="context_external_tool_788"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 Media Gallery
-              </a>
+              </Link>
             </li>
+
             <li className="section">
-              <a
-                href="/courses/3080/external_tools/789"
-                title="Video Recording"
-                className="context_external_tool_789"
-                tabIndex="0"
-              >
+              <Link to="/" tabIndex="0">
                 Video Recording
-              </a>
+              </Link>
+            </li>
+
+            <li className="section">
+              <Link to="/groups" tabIndex="0">
+                Group Management
+              </Link>
             </li>
           </ul>
         </nav>
