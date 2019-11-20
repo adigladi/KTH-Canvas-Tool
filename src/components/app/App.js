@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Sidebar from "./components/sidebar";
-import Home from "./components/course/home";
-import GroupManagement from "./components/course/groups";
+import Sidebar from "../sidebar";
+import Home from "../course/home";
+import GroupManagement from "../course/groups";
 
 export default function App() {
   return (
