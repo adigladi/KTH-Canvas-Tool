@@ -93,16 +93,7 @@ export default class GroupManagement extends Component {
   };
 
   render() {
-    var groupA = {
-      name: "Group A",
-      weekData: {
-        45: [18.7, 16.7, 17, 15.7, 15.3, 16],
-        46: [15, 22, 16, 18, 12, 17],
-        47: [20, 14, 19, 14, 16, 15],
-        48: [21, 14, 16, 15, 18, 16],
-        49: [16, 14, 19, 21, 13, 17]
-      }
-    };
+    var dataset = this.getGroupData();
 
     var data = {
       labels: [
@@ -113,7 +104,7 @@ export default class GroupManagement extends Component {
         "Design Critique",
         "Presentation"
       ],
-      datasets: this.state.data
+      datasets: dataset
     };
 
     var options = {
