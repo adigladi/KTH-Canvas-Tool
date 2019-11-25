@@ -6,6 +6,7 @@ import students from "./students";
 import "../styles/groups.scss";
 import CourseMenu from "./menu";
 import CourseHeader from "./header";
+import Joyride from "react-joyride";
 
 export default class GroupManagement extends Component {
   constructor(props) {
@@ -197,8 +198,32 @@ export default class GroupManagement extends Component {
       48: 48,
       49: 49
     };
+
+    var steps = [
+      {
+        target: ".groupContainer",
+        content:
+          "This is a tool designed to help teachers evaluate grouply projects."
+      },
+      {
+        target: ".chartContainer",
+        content:
+          "This radar chart shows the average of hours worked in different course parts, in all groups. Press the group title to filter out the selected group."
+      },
+      {
+        target: ".weekSlider",
+        content: "Use this slider to show data from a specific week."
+      },
+      {
+        target: ".groupList",
+        content:
+          "Here you can select to view a specific group, to see the work hours of all group members."
+      }
+    ];
+
     return (
       <div id="wrapper" className="ic-Layout-wrapper">
+        <Joyride steps={steps} continuous={true} />
         <CourseHeader />
         <div className="ic-Layout-columns">
           <CourseMenu active="groups" />
