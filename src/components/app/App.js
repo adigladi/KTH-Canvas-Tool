@@ -8,7 +8,7 @@ import GroupManagement from "../course/groups";
 export default function App() {
   return (
     <Router>
-      <Sidebar />
+      <Sidebar active={window.location.pathname} />
       <Switch>
         <Route path="/groups">
           <GroupManagement />

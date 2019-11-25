@@ -1,4 +1,4 @@
-import React, { Component } from "react"; 
+import React, { Component } from "react";
 
 export default class Sidebar extends Component {
   render() {
@@ -13,10 +13,7 @@ export default class Sidebar extends Component {
           aria-label="Global Navigation"
         >
           <div className="ic-app-header__logomark-container">
-            <a
-              href="https://kth.instructure.com/"
-              className="ic-app-header__logomark"
-            >
+            <a href="/" className="ic-app-header__logomark">
               <span className="screenreader-only">Dashboard</span>
             </a>
           </div>
@@ -62,7 +59,14 @@ export default class Sidebar extends Component {
                 <div className="menu-item__text">Dashboard</div>
               </a>
             </li>
-            <li className="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+            <li
+              className={
+                "menu-item ic-app-header__menu-list-item " +
+                (this.props.active === "/courses"
+                  ? "ic-app-header__menu-list-item--active"
+                  : "")
+              }
+            >
               <a
                 id="global_nav_courses_link"
                 role="button"
@@ -86,7 +90,14 @@ export default class Sidebar extends Component {
                 <div className="menu-item__text">Courses</div>
               </a>
             </li>
-            <li className="menu-item ic-app-header__menu-list-item ">
+            <li
+              className={
+                "menu-item ic-app-header__menu-list-item " +
+                (this.props.active === "/groups"
+                  ? "ic-app-header__menu-list-item--active"
+                  : "")
+              }
+            >
               <a
                 id="global_nav_groups_link"
                 role="button"

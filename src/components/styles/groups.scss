@@ -1,0 +1,44 @@
+.groupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chartContainer {
+    display: inline-block;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    margin-top: 24px;
+}
+
+.groupList {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    li {
+        display: inline-block;
+        margin-right: 20px;
+        font-weight: 500;
+        color: rgb(54, 162, 235);
+        cursor: pointer;
+    }
+
+    .active {
+        color: black !important;
+        border-bottom: 2px solid #2D3B45;
+        cursor: default;
+    }
+}
+
+.weekSlider {
+    margin: 10px 200px;
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
+
+    p {
+        margin-right: 20px;
+    }
+}

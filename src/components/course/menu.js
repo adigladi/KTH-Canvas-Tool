@@ -12,7 +12,11 @@ export default class CourseMenu extends Component {
         <nav role="navigation" aria-label="Courses Navigation Menu">
           <ul id="section-tabs">
             <li className="section">
-              <Link to="/" tabIndex="0" className="active">
+              <Link
+                to="/"
+                tabIndex="0"
+                className={this.props.active === "home" ? "active" : ""}
+              >
                 Home
               </Link>
             </li>
@@ -77,7 +81,11 @@ export default class CourseMenu extends Component {
             </li>
 
             <li className="section">
-              <Link to="/groups" tabIndex="0">
+              <Link
+                to="/groups"
+                tabIndex="0"
+                className={this.props.active === "groups" ? "active" : ""}
+              >
                 Group Management
               </Link>
             </li>
