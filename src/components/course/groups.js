@@ -203,7 +203,7 @@ export default class GroupManagement extends Component {
       {
         target: ".groupContainer",
         content:
-          "This is a tool designed to help teachers evaluate grouply projects."
+          "This is a tool designed to help teachers evaluate group projects."
       },
       {
         target: ".chartContainer",
@@ -232,6 +232,7 @@ export default class GroupManagement extends Component {
               <Radar data={data} options={options} />
             </div>
             <div className="groupList" onClick={this.setActiveGroup}>
+              <p>Group data: </p>
               <ul>
                 <li
                   id="all"
