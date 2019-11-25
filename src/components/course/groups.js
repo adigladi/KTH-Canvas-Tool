@@ -59,17 +59,6 @@ export default class GroupManagement extends Component {
         fill: true
       });
     });
-    dataset.push({
-      label: "Recommended amount of hours",
-      data: [10, 10, 10, 10, 10, 10],
-      pointRadius: 0,
-      backgroundColor: this.getColor(4, 0.2),
-      borderColor: this.getColor(4, 0.2),
-      borderDash: [5, 3],
-      borderWidth: 2,
-      lineTension: 0.4,
-      fill: "origin"
-    });
     return dataset;
   };
 
@@ -112,14 +101,14 @@ export default class GroupManagement extends Component {
     });
     dataset.push({
       label: "Recommended amount of hours",
-      data: [10, 10, 10, 10, 10],
+      data: [20, 20, 20, 20, 20],
       pointRadius: 0,
       backgroundColor: this.getColor(4, 0.2),
       borderColor: this.getColor(4, 0.2),
       borderDash: [5, 3],
       borderWidth: 2,
       lineTension: 0.4,
-      fill: false
+      fill: true
     });
 
     dataset.push({
