@@ -22,7 +22,7 @@ export default class Sidebar extends Component {
               <a
                 id="global_nav_profile_link"
                 role="button"
-                href="/profile"
+                href="/"
                 className="ic-app-header__menu-list-link"
               >
                 <div className="menu-item-icon-container" aria-hidden="true">
@@ -39,7 +39,7 @@ export default class Sidebar extends Component {
             <li className="ic-app-header__menu-list-item ">
               <a
                 id="global_nav_dashboard_link"
-                href="https://kth.instructure.com/"
+                href="/"
                 className="ic-app-header__menu-list-link"
               >
                 <div className="menu-item-icon-container" aria-hidden="true">
@@ -62,7 +62,7 @@ export default class Sidebar extends Component {
             <li
               className={
                 "menu-item ic-app-header__menu-list-item " +
-                (this.props.active === "/courses"
+                (this.props.active === "/courses" || this.props.active === "/"
                   ? "ic-app-header__menu-list-item--active"
                   : "")
               }
@@ -119,7 +119,7 @@ export default class Sidebar extends Component {
             <li className="menu-item ic-app-header__menu-list-item ">
               <a
                 id="global_nav_calendar_link"
-                href="/calendar"
+                href="/"
                 className="ic-app-header__menu-list-link"
               >
                 <div className="menu-item-icon-container" aria-hidden="true">

@@ -33,7 +33,8 @@ export default class GroupManagement extends Component {
       "255, 206, 86",
       "75, 192, 192",
       "153, 102, 255",
-      "255, 99, 132"
+      "255, 99, 132",
+      "100, 100, 100"
     ];
     index = Number.isInteger(index) ? index : index.charCodeAt(0) - 65;
     alpha = !alpha ? 1 : alpha;
@@ -91,12 +92,14 @@ export default class GroupManagement extends Component {
   getMemberData = group => {
     var dataset = [];
     var memberData = [];
+    var peerData = [];
 
     students.forEach(student => {
       if (student.group === group) {
         var hours = 0;
         student.weekData[this.state.week].forEach(part => (hours += part));
         memberData.push(hours);
+        peerData.push(student.peerData[this.state.week]);
       }
     });
     dataset.push({
@@ -113,9 +116,20 @@ export default class GroupManagement extends Component {
 
     dataset.push({
       label: this.state.group,
-      data: memberData,
+      data: peerData,
       backgroundColor: this.getColor(group, 0.2),
       borderColor: this.getColor(group),
+      borderWidth: 2,
+      lineTension: 0.1,
+      fill: false
+    });
+
+    dataset.push({
+      label: "Peer-reviewed hours",
+      data: memberData,
+      backgroundColor: this.getColor(5, 0.2),
+      borderColor: this.getColor(5, 0.4),
+      borderDash: [5, 3],
       borderWidth: 2,
       lineTension: 0.1,
       fill: false
@@ -124,10 +138,12 @@ export default class GroupManagement extends Component {
   };
 
   setActiveGroup = group => {
-    var activeGroup = group.target.id !== "all" ? group.target.innerHTML : "";
-    this.setState({
-      group: activeGroup
-    });
+    if (group.target.tagName === "LI") {
+      var activeGroup = group.target.id !== "all" ? group.target.innerHTML : "";
+      this.setState({
+        group: activeGroup
+      });
+    }
   };
 
   getLabels = () => {
@@ -172,11 +188,6 @@ export default class GroupManagement extends Component {
           // max: 20
         }
       }
-      /*       legend: {
-        onClick: function(evt, item) {
-          console.log("legend onClick", evt, item);
-        }
-      } */
     };
 
     const weeks = {
