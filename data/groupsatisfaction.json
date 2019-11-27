@@ -1,0 +1,13 @@
+[
+  {
+    "repeat(10)": {
+      "Group A": {
+        "satisfaction": [
+          {
+            "repeat(8)": "{{random(\"Very Unhappy\", \"Slightly Unhappy\", \"Neutral\", \"Happy\", \"Very Happy\")}}"
+          }
+        ]
+      }
+    }
+  }
+]

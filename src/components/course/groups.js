@@ -7,6 +7,7 @@ import "../styles/groups.scss";
 import CourseMenu from "./menu";
 import CourseHeader from "./header";
 import Joyride from "react-joyride";
+import SurveyChart from "./surveychart";
 
 export default class GroupManagement extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export default class GroupManagement extends Component {
     this.state = {
       week: 49,
       group: "",
+      color: "",
       data: []
     };
   }
@@ -34,6 +36,12 @@ export default class GroupManagement extends Component {
       "255, 206, 86",
       "75, 192, 192",
       "153, 102, 255",
+      "255, 159, 64",
+      "252, 217, 193",
+      "231, 104, 104",
+      "190, 243, 180",
+      "255, 207, 159",
+      "165, 223, 223",
       "255, 99, 132",
       "100, 100, 100"
     ];
@@ -44,7 +52,7 @@ export default class GroupManagement extends Component {
 
   getGroupData = () => {
     var dataset = [];
-    var groupID = ["A", "B", "C", "D"];
+    var groupID = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
     var groups = [];
     groupID.forEach(id =>
@@ -58,7 +66,7 @@ export default class GroupManagement extends Component {
         borderColor: this.getColor(i, 1),
         borderWidth: 2,
         lineTension: 0.1,
-        fill: true
+        fill: false
       });
     });
     return dataset;
@@ -70,7 +78,10 @@ export default class GroupManagement extends Component {
       46: [0, 0, 0, 0, 0, 0],
       47: [0, 0, 0, 0, 0, 0],
       48: [0, 0, 0, 0, 0, 0],
-      49: [0, 0, 0, 0, 0, 0]
+      49: [0, 0, 0, 0, 0, 0],
+      50: [0, 0, 0, 0, 0, 0],
+      51: [0, 0, 0, 0, 0, 0],
+      52: [0, 0, 0, 0, 0, 0]
     };
 
     students.forEach(student => {
@@ -107,8 +118,8 @@ export default class GroupManagement extends Component {
       label: "Recommended amount of hours",
       data: [20, 20, 20, 20, 20],
       pointRadius: 0,
-      backgroundColor: this.getColor(4, 0.2),
-      borderColor: this.getColor(4, 0.2),
+      backgroundColor: this.getColor(10, 0.2),
+      borderColor: this.getColor(10, 0.2),
       borderDash: [5, 3],
       borderWidth: 2,
       lineTension: 0.4,
@@ -128,8 +139,8 @@ export default class GroupManagement extends Component {
     dataset.push({
       label: "Peer-reviewed hours",
       data: memberData,
-      backgroundColor: this.getColor(5, 0.2),
-      borderColor: this.getColor(5, 0.4),
+      backgroundColor: this.getColor(11, 0.2),
+      borderColor: this.getColor(11, 0.4),
       borderDash: [5, 3],
       borderWidth: 2,
       lineTension: 0.1,
@@ -142,7 +153,8 @@ export default class GroupManagement extends Component {
     if (group.target.tagName === "LI") {
       var activeGroup = group.target.id !== "all" ? group.target.innerHTML : "";
       this.setState({
-        group: activeGroup
+        group: activeGroup,
+        color: this.getColor(activeGroup.slice(-1))
       });
     }
   };
@@ -196,7 +208,10 @@ export default class GroupManagement extends Component {
       46: 46,
       47: 47,
       48: 48,
-      49: 49
+      49: 49,
+      50: 50,
+      51: 51,
+      52: 52
     };
 
     var steps = [
@@ -265,13 +280,49 @@ export default class GroupManagement extends Component {
                 >
                   Group D
                 </li>
+                <li
+                  className={this.state.group === "Group E" ? "active" : ""}
+                  style={{ color: this.getColor(4) }}
+                >
+                  Group E
+                </li>
+                <li
+                  className={this.state.group === "Group F" ? "active" : ""}
+                  style={{ color: this.getColor(5) }}
+                >
+                  Group F
+                </li>
+                <li
+                  className={this.state.group === "Group G" ? "active" : ""}
+                  style={{ color: this.getColor(6) }}
+                >
+                  Group G
+                </li>
+                <li
+                  className={this.state.group === "Group H" ? "active" : ""}
+                  style={{ color: this.getColor(7) }}
+                >
+                  Group H
+                </li>
+                <li
+                  className={this.state.group === "Group I" ? "active" : ""}
+                  style={{ color: this.getColor(8) }}
+                >
+                  Group I
+                </li>
+                <li
+                  className={this.state.group === "Group J" ? "active" : ""}
+                  style={{ color: this.getColor(9) }}
+                >
+                  Group J
+                </li>
               </ul>
             </div>
             <div className="weekSlider">
               <p>Week: </p>
               <Slider
                 min={45}
-                max={49}
+                max={52}
                 marks={weeks}
                 step={1}
                 included={false}
@@ -279,6 +330,7 @@ export default class GroupManagement extends Component {
                 onChange={this.onSliderChange}
               />
             </div>
+            {this.state.group !== "" && <SurveyChart group={this.state.group} color={this.state.color} />}
           </div>
         </div>
       </div>

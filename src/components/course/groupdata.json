@@ -1,0 +1,126 @@
+
+  {
+    "Group A": {
+      "satisfaction": [
+        "Very Unhappy",
+        "Very Unhappy",
+        "Very Happy",
+        "Neutral",
+        "Slightly Unhappy",
+        "Very Unhappy",
+        "Very Happy",
+        "Slightly Unhappy"
+      ]
+    },
+
+    "Group B": {
+      "satisfaction": [
+        "Happy",
+        "Very Unhappy",
+        "Happy",
+        "Neutral",
+        "Neutral",
+        "Happy",
+        "Very Happy",
+        "Slightly Unhappy"
+      ]
+    },
+    "Group C": {
+      "satisfaction": [
+        "Very Unhappy",
+        "Happy",
+        "Happy",
+        "Happy",
+        "Neutral",
+        "Slightly Unhappy",
+        "Very Happy",
+        "Very Happy"
+      ]
+    },
+
+    "Group D": {
+      "satisfaction": [
+        "Slightly Unhappy",
+        "Slightly Unhappy",
+        "Very Happy",
+        "Slightly Unhappy",
+        "Slightly Unhappy",
+        "Slightly Unhappy",
+        "Slightly Unhappy",
+        "Very Happy"
+      ]
+    },
+    "Group E": {
+      "satisfaction": [
+        "Very Happy",
+        "Happy",
+        "Neutral",
+        "Very Happy",
+        "Happy",
+        "Slightly Unhappy",
+        "Neutral",
+        "Very Happy"
+      ]
+    },
+    "Group F": {
+      "satisfaction": [
+        "Very Happy",
+        "Very Happy",
+        "Very Unhappy",
+        "Very Unhappy",
+        "Slightly Unhappy",
+        "Happy",
+        "Very Unhappy",
+        "Happy"
+      ]
+    },
+    "Group G": {
+      "satisfaction": [
+        "Neutral",
+        "Neutral",
+        "Slightly Unhappy",
+        "Happy",
+        "Happy",
+        "Very Unhappy",
+        "Very Happy",
+        "Happy"
+      ]
+    },
+    "Group H": {
+      "satisfaction": [
+        "Neutral",
+        "Neutral",
+        "Neutral",
+        "Neutral",
+        "Slightly Unhappy",
+        "Very Unhappy",
+        "Slightly Unhappy",
+        "Slightly Unhappy"
+      ]
+    },
+    "Group I": {
+      "satisfaction": [
+        "Neutral",
+        "Very Happy",
+        "Very Unhappy",
+        "Slightly Unhappy",
+        "Slightly Unhappy",
+        "Very Unhappy",
+        "Slightly Unhappy",
+        "Very Happy"
+      ]
+    },
+    "Group J": {
+      "satisfaction": [
+        "Happy",
+        "Slightly Unhappy",
+        "Slightly Unhappy",
+        "Happy",
+        "Neutral",
+        "Slightly Unhappy",
+        "Slightly Unhappy",
+        "Very Happy"
+      ]
+    }
+  }
+

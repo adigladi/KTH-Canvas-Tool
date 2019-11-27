@@ -1,0 +1,262 @@
+[
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "A",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "B",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "C",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "D",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "E",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "F",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "G",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "H",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "I",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  },
+  {
+    "repeat(5)": {
+      "name": "{{firstName()}} {{surname()}}",
+      "group": "J",
+      "weekData": {
+        "45": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "46": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "47": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "48": [{ "repeat(6)": "{{integer(1, 6)}}" }],
+        "49": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "50": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "51": [{ "repeat(6)": "{{integer(1, 4)}}" }],
+        "52": [{ "repeat(6)": "{{integer(1, 4)}}" }]
+      },
+      "peerData": {
+        "45": ["{{integer(5, 20)}}"],
+        "46": ["{{integer(5, 20)}}"],
+        "47": ["{{integer(5, 20)}}"],
+        "48": ["{{integer(5, 20)}}"],
+        "49": ["{{integer(5, 20)}}"],
+        "50": ["{{integer(5, 20)}}"],
+        "51": ["{{integer(5, 20)}}"],
+        "52": ["{{integer(5, 20)}}"]
+      }
+    }
+  }
+]
