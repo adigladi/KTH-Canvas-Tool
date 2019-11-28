@@ -7,13 +7,14 @@ import "../styles/groups.scss";
 import CourseMenu from "./menu";
 import CourseHeader from "./header";
 import Joyride from "react-joyride";
-import SurveyChart from "./surveychart";
+import Satisfaction from "./satisfaction";
+import Motivation from "./motivation";
 
 export default class GroupManagement extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      week: 49,
+      week: 52,
       group: "",
       color: "",
       data: []
@@ -330,7 +331,12 @@ export default class GroupManagement extends Component {
                 onChange={this.onSliderChange}
               />
             </div>
-            {this.state.group !== "" && <SurveyChart group={this.state.group} color={this.state.color} />}
+            {this.state.group !== "" && (
+              <Satisfaction group={this.state.group} color={this.state.color} />
+            )}
+            {this.state.group !== "" && (
+              <Motivation group={this.state.group} color={this.state.color} />
+            )}
           </div>
         </div>
       </div>

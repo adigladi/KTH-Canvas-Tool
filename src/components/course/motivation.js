@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Line } from "react-chartjs-2";
 import groups from "./groupdata";
 
-export default class SurveyChart extends Component {
+export default class Motivation extends Component {
   getPointColor = groupData => {
     let colorData = [];
     const colors = {
@@ -15,15 +15,15 @@ export default class SurveyChart extends Component {
 
     groupData.forEach(weekData => {
       colorData.push(
-        weekData === "Very Unhappy"
+        weekData === "Very Unmotivated"
           ? colors.red
-          : weekData === "Slightly Unhappy"
+          : weekData === "Slightly Unmotivated"
           ? colors.orange
           : weekData === "Neutral"
           ? colors.aqua
-          : weekData === "Happy"
+          : weekData === "Motivated"
           ? colors.blue
-          : weekData === "Very Happy"
+          : weekData === "Very Motivated"
           ? colors.green
           : ""
       );
@@ -35,18 +35,18 @@ export default class SurveyChart extends Component {
     var data = {
       xLabels: ["45", "46", "47", "48", "49", "50", "51", "52"],
       yLabels: [
-        "Very Unhappy",
-        "Slightly Unhappy",
+        "Very Unmotivated",
+        "Slightly Unmotivated",
         "Neutral",
-        "Happy",
-        "Very Happy"
+        "Motivated",
+        "Very Motivated"
       ],
       datasets: [
         {
-          data: groups[this.props.group].satisfaction,
+          data: groups[this.props.group].motivation,
           borderColor: this.props.color,
           pointBackgroundColor: this.getPointColor(
-            groups[this.props.group].satisfaction
+            groups[this.props.group].motivation
           ),
           pointRadius: 5,
           fill: false
@@ -57,7 +57,7 @@ export default class SurveyChart extends Component {
     var options = {
       title: {
         display: true,
-        text: "Group satisfaction"
+        text: "Group motivation"
       },
       legend: {
         display: false
