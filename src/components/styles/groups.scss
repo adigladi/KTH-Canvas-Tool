@@ -5,11 +5,15 @@
 }
 
 .chartContainer {
-    display: inline-block;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin-top: 24px;
+}
+
+.radarContainer {
+    width: 70%;
 }
 
 .groupList {
@@ -34,12 +38,17 @@
 }
 
 .weekSlider {
-    margin: 10px 150px;
+    margin: 10px 150px 0 0;
     display: flex;
     align-items: center;
-    width: -webkit-fill-available;
+    width: 50%;
 
     p {
         margin-right: 20px;
     }
+}
+
+.groupChartContainer {
+    display: flex;
+    flex-direction: column;
 }

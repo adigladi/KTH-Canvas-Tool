@@ -21,10 +21,6 @@ export default class GroupManagement extends Component {
     };
   }
 
-  componentDidMount() {
-    this.setState({ data: this.getGroupData() });
-  }
-
   onSliderChange = value => {
     this.setState({
       week: value
@@ -116,7 +112,7 @@ export default class GroupManagement extends Component {
       }
     });
     dataset.push({
-      label: "Recommended amount of hours",
+      label: "Recommended",
       data: [20, 20, 20, 20, 20],
       pointRadius: 0,
       backgroundColor: this.getColor(10, 0.2),
@@ -244,9 +240,6 @@ export default class GroupManagement extends Component {
         <div className="ic-Layout-columns">
           <CourseMenu active="groups" />
           <div className="groupContainer">
-            <div id="" className="chartContainer">
-              <Radar data={data} options={options} />
-            </div>
             <div className="groupList" onClick={this.setActiveGroup}>
               <p>Group data: </p>
               <ul>
@@ -319,6 +312,25 @@ export default class GroupManagement extends Component {
                 </li>
               </ul>
             </div>
+            <div id="" className="chartContainer">
+              <div className="groupChartContainer">
+                {this.state.group !== "" && (
+                  <Satisfaction
+                    group={this.state.group}
+                    color={this.state.color}
+                  />
+                )}
+                {this.state.group !== "" && (
+                  <Motivation
+                    group={this.state.group}
+                    color={this.state.color}
+                  />
+                )}
+              </div>
+              <div className="radarContainer">
+                <Radar data={data} options={options} />
+              </div>
+            </div>
             <div className="weekSlider">
               <p>Week: </p>
               <Slider
@@ -331,12 +343,6 @@ export default class GroupManagement extends Component {
                 onChange={this.onSliderChange}
               />
             </div>
-            {this.state.group !== "" && (
-              <Satisfaction group={this.state.group} color={this.state.color} />
-            )}
-            {this.state.group !== "" && (
-              <Motivation group={this.state.group} color={this.state.color} />
-            )}
           </div>
         </div>
       </div>
