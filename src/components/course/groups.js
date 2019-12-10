@@ -124,7 +124,7 @@ export default class GroupManagement extends Component {
     });
 
     dataset.push({
-      label: this.state.group,
+      label: "Self-assessed hours",
       data: peerData,
       backgroundColor: this.getColor(group, 0.2),
       borderColor: this.getColor(group),
